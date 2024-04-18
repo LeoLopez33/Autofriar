@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/Img/favicon16x16.png" type="image/x-icon"> <!--Linkeamos el favicon, reel shortcut icon-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"> <!--linkeamos iconos de redes sociales-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!--Enlace para botones gráficos-->
+    <!--CDN de bboostrap enlace-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../styles/style_index.css"> <!--linkeamos nuestro css style-->
+    <title>Contactos</title>
+</head>
+
+<body>
+   
+    <header>
+        <nav class="navbar bg-body-tertiary navbar-expand-md">           
+          <div class="container-fluid"> <!--header contenedor-->   
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                    aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>  
+                <a href="../index.html"><img class= logo src="../img/logo.png" alt="Logo" title="Autofriar" width="280px" id="inicio"></a>          
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">                  
+                    <div class="offcanvas-header"> <!--Botón cerrar hamburguesa-->
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div> 
+                    <div class="offcanvas-body"><!--div de nuestra lista UL-->
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3"> <!--Nuestro UL-->
+                            <li class="nav-item"> <!--Nuestro LI-->
+                                <a class="nav-link" aria-current="page" href="nosotros.html">Nosotros</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="proyectos.html">proyectos</a>
+                                <ul>
+                                    <li><a href="proyectos.html">Sala de Máquinas</a></li>            
+                                    <li><a href="proyectos.html">Depósitos Inteligentes</a></li>               
+                                    <li><a href="proyectos.html">Faenas</a></li>
+                                    <li><a href="proyectos.html">Termografías</a></li>
+                                    <li><a href="proyectos.html">Energías</a></li>
+                                    <li><a href="proyectos.html">Feedlot</a></li>
+                                    <li><a href="proyectos.html">Sub-Productos</a></li>
+                                    <li><a href="proyectos.html">Planta II - Hornos</a></li>                       
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="plantas.html">plantas</a>
+                                <ul>
+                                    <li><a href="plantas.html">Planta Reconquista I</a></li>
+                                    <li><a href="plantas.html">Planta Reconquista II</a></li>
+                                    <li><a href="plantas.html">Planta Sub-Producto</a></li>
+                                    <li><a href="plantas.html">Planta Feedlot</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="">Contacto</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+      </header>
+  
+        <div class="grid-contacto">
+
+            <form class="row g-3">
+
+                    <div class="col-3">
+                        <select class="form-select" aria-label="planta">
+                            <option selected>Planta I</option>
+                            <option value="1">Planta II</option>
+                            <option value="2">Sub-Producto</option>
+                            <option value="3">Feedlot</option>
+                        </select>
+                    </div>
+
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" checked>
+                        <label class="form-check-label" for="flexRadioDefault1">Masculino
+                        </label>
+                    </div>
+
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                        <label class="form-check-label" for="flexRadioDefault2">Femenino
+                        </label>
+                    </div>
+
+                <div class="row g-3">
+
+                    <div class="col-3">
+                        <label for="inputname" class="fomr-label">Nombre</label>
+                        <input type="nombre" class="form-control" id="inputname" placeholder="Nombre">
+                    </div>
+
+                    <div class="col-3">
+                        <label for="inputapellido" class="fomr-label">Apellido</label>
+                        <input type="nombre" class="form-control" id="inputapellido" placeholder="Apellido">
+                    </div>
+
+                </div>
+                    
+                <div class="row g-3">
+
+                    <div class="col-3">
+                        <label for="inputapemail" class="fomr-label">Email</label>
+                        <input type="email" class="form-control" id="inputapemail" placeholder="Email">
+                    </div>
+
+                </div>
+
+                <div class="row g-3">
+
+                    <div class="col-3">
+                        <label for="inputcel" class="fomr-label">Teléfono</label>
+                        <input type="tel" class="form-control" id="inputcel" placeholder="Teléfono">
+                    </div>
+
+                </div>
+                    
+                <div class="row g-3">
+
+                    <div class="col-12">
+                        <textarea name="consulta" id="consulta" cols="45" rows="10" placeholder="Mensaje"></textarea><br>
+                        <input type="submit" value="ENVIAR">
+                        <input type="reset" value="LIMPIAR CAMPOS">
+                    </div>
+                    
+                </div>
+
+            </form>
+
+        </div>
+
+
+<footer>
+
+            <div class ="container-fluid">
+                <div class="row">
+                    <iframe class="col-sm-12 col-md-4 col-lg-4 col-xl-4 mapa"
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13939.469611427641!2d-59.655724!3d-29.1391012!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x944eba826321abcb%3A0x648171a5609062b7!2sFRIAR%20SA!5e0!3m2!1ses-419!2sar!4v1711126079764!5m2!1ses-419!2sar" 
+                        width="400" height="250" style="border: 1px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" frameborder="1">
+                    </iframe>
+    
+                    <div class="col-sm-12 col-md-4 col-lg-4 col-xl-2">
+                        <h4>Planta Reconquista I</h4>                    
+                            <P>Establecimiento Oficial Nº 1970 <br>
+                            Bv. Hipolito Irigoyen 298 (3560) <br>
+                            Reconquista - Santa Fe.</P>
+    
+                            <div class="col-sm-12 col-md-4 col-lg-4 col-xl-12">
+                                <h4>Feedlot</h4>
+                                    <P>Establecimiento Rural <br>
+                                    Nicanor E. Molina <br>                    
+                                    Nicanor Molina - Santa Fe <br></P>
+                            </div>
+                    </div>                    
+                    <div class= "col-sm-12 col-md-4 col-lg-4 col-xl-2">
+                        <h4>Planta Reconquista II</h4>                    
+                            <P>Establecimiento Oficial Nº 1970 <br>
+                            Bv. Hipolito Irigoyen 298 (3560) <br>
+                            Reconquista - Santa Fe.</P>
+    
+                            <div class="col-sm-12 col-md-4 col-lg-4 col-xl-12">
+                                <h4>Planta Sub-Producto</h4>
+                                    <P>Establecimiento Oficial Nº 4828 <br>
+                                    Av. Circunvalación 645 (3561) <br>                  
+                                    Avellaneda - Santa Fe</P>
+                            </div>
+                    </div>
+                </div>   
+                <div class="col-sm-12 col-md-4 col-lg-4 col-xl-2 align align-self-start">
+                    <h4>Seguinos</h4>                          
+                    <a href="#"> <i class="fab fa-facebook-f"></i></a>
+                    <a href="#"> <i class="fab fa-instagram"></i> </a><br>
+                    <a href="#"> <i class="fab fa-twitter"></i></a>
+                    <a href="#"> <i class="fab fa-linkedin"></i></a>
+                    <a href="#inicio"><i class="fa-solid fa-circle-chevron-up" style="color: #981fb4;"></i></a>
+                </div> 
+            </div>  
+
+</footer>
+    
+        <!--Script Boostrap-->
+        
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" 
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous">
+    </script>
+
+</body>
+</html>

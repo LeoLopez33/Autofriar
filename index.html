@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/Img/favicon16x16.png" type="image/x-icon"> <!--Linkeamos el favicon, reel shortcut icon-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"> <!--linkeamos iconos de redes sociales-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!--Enlace para botones gráficos-->
+    <!--CDN de bboostrap enlace-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/style_index.css"> <!--linkeamos nuestro css style-->
+    <title>Auto-Friar</title>
+
+</head> 
+<body>
+       
+<header>
+    <nav class="navbar bg-body-tertiary navbar-expand-md">  
+      <div class="container-fluid"> <!--header contenedor del index-->
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <img class= logo src="img/logo.png" alt="Logo" title="Autofriar" width="280px" id="inicio">
+        
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header"> <!--Botón cerrar hamburguesa-->
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body"><!--div de nuestra lista UL-->
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3"> <!--Nuestro UL-->
+                        <li class="nav-item"> <!--Nuestro LI-->
+                            <a class="nav-link" aria-current="page" href="pages/nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pages/proyectos.html">Proyectos</a>
+                            <ul>
+                                <li><a href="pages/pages/proyectos.html">Sala de Máquinas</a></li>            
+                                <li><a href="pages/proyectos.html">Depósitos Inteligentes</a></li>               
+                                <li><a href="pages/proyectos.html">Faenas</a></li>
+                                <li><a href="pages/proyectos.html">Termografías</a></li>
+                                <li><a href="pages/proyectos.html">Energías</a></li>
+                                <li><a href="pages/proyectos.html">Feedlot</a></li>
+                                <li><a href="pages/proyectos.html">Sub-Productos</a></li>
+                                <li><a href="pages/proyectos.html">Planta II - Hornos</a></li>                       
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pages/plantas.html">plantas</a>
+                            <ul>
+                                <li><a href="pages/plantas.html">Planta Reconquista I</a></li>
+                                <li><a href="pages/plantas.html">Planta Reconquista II</a></li>
+                                <li><a href="pages/">Planta Sub-Producto</a></li>
+                                <li><a href="pages/plantas.html">Planta Feedlot</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pages/contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+  </header>
+
+    <!--Section H1 e IMAGEN banner principal (alojamos la IMG dentro del CSS)-->
+
+    <section id="banner">
+        <h1><span class="color-part">Automatización</span> Industrial</h1>
+    </section>
+
+
+    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+
+        <div class="carousel-inner">
+
+            <div class="carousel-item active">
+                <img src="img/exporta-1-scaled.jpg" class="d-block w-100" alt="exporta" title="exportación">
+            </div>
+
+            <div class="carousel-item">
+                <img src="img/asado-1-scaled.jpg" class="d-block w-100" alt="asado" title="asado">
+            </div>
+
+            <div class="carousel-item">
+                <img src="img/animales-1-scaled.jpg" class="d-block w-100" alt="animales" title="vacas">
+            </div>
+
+            <div class="carousel-item">
+                <img src="img/hamburguesa-1-scaled.jpg" class="d-block w-100" alt="burger" title="hamburguesas">
+            </div>
+
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+
+<section class="content">
+
+    <article class="card" style="width: max-content">
+
+        <div class="card-images">
+        <img src="img/plc-1200.jpg" class="card-img-top" alt="PLC_S7-1200" title="PLC_S7-1200">
+        </div>    
+
+        <div class="card-body">
+            <h2>Lo <span class="color-part">que somos...</span></h2> 
+            <p class="card-text">Auto-Friar es una división de desarrollo del frigorífico FRIAR. 
+                Aquí, usamos la tecnología para realizar tareas con mayor precisión y poca intervención humana. <br>
+                Se puede implementar en cualquier sector en el que se lleven a cabo tareas repetitivas.
+                Sin embargo, es más común en aquellos relacionados con la fabricación o producción
+                en línea, desplazamiento de mercadería y almacenamientos inteligentes.</p> 
+            <div class="boton">
+                <button class="button"><a href="pages/nosotros.html">NOSOTROS</a></button>
+            </div>
+        </div>
+    </article>
+
+
+    <article class="card" style= "width: max-content">
+        <div class="card-images">
+            <img src="img/fondo_friarsa.jpg" class="card-img-top" alt="Deposito_Int" title="Deposito">
+        </div>            
+        <div class="card-body">
+            <h2>Proyectos & <span class="color-part">Automatizaciones</span></h2>
+            <p class="card-text">Te invitamos a conocer nuestro equipo técnico y los proyectos de obras,
+                        mantenimientos programados y rutinarios. <br>
+                        Nos ubicamos en la localidad de Reconquista, provincia de Santa Fe.
+                        Actualmente brindamos asesoramiento integral a nuestros clientes internos,
+                        desde un layout inicial del proyecto hasta su efectiva implementación.</p>
+            <div class="boton">
+                <button class="button"><a href="pages/proyectos.html">PROYECTOS</a></button>
+            </div>
+        </div>
+    </article>
+</section>
+
+<!--Sector "Frase Henry Ford"-->
+
+<section id="frase">
+    <div class="container">
+        <p class="color-part">
+            El verdadero progreso es aquel que pone la tecnología al alcance de todos... <br>
+            "Henry Ford"
+        </p>
+    </div>
+ </section>
+
+
+<footer>
+
+        <div class ="container-fluid">
+            <div class="row">
+                <iframe class="col-sm-12 col-md-4 col-lg-4 col-xl-4 mapa"
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13939.469611427641!2d-59.655724!3d-29.1391012!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x944eba826321abcb%3A0x648171a5609062b7!2sFRIAR%20SA!5e0!3m2!1ses-419!2sar!4v1711126079764!5m2!1ses-419!2sar" 
+                    width="400" height="250" style="border: 1px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" frameborder="1">
+                </iframe>
+                <div class="col-sm-12 col-md-4 col-lg-4 col-xl-2">
+                    <h4>Planta Reconquista I</h4>                    
+                        <P>Establecimiento Oficial Nº 1970 <br>
+                        Bv. Hipolito Irigoyen 298 (3560) <br>
+                        Reconquista - Santa Fe.</P>
+
+                        <div class="col-sm-12 col-md-4 col-lg-4 col-xl-12">
+                            <h4>Feedlot</h4>
+                                <P>Establecimiento Rural <br>
+                                Nicanor E. Molina <br>                    
+                                Nicanor Molina - Santa Fe <br></P>
+                        </div>
+                </div>                
+                <div class= "col-sm-12 col-md-4 col-lg-4 col-xl-2">
+                    <h4>Planta Reconquista II</h4>                    
+                        <P>Establecimiento Oficial Nº 1970 <br>
+                        Bv. Hipolito Irigoyen 298 (3560) <br>
+                        Reconquista - Santa Fe.</P>
+
+                        <div class="col-sm-12 col-md-4 col-lg-4 col-xl-12">
+                            <h4>Planta Sub-Producto</h4>
+                                <P>Establecimiento Oficial Nº 4828 <br>
+                                Av. Circunvalación 645 (3561) <br>                  
+                                Avellaneda - Santa Fe</P>
+                        </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-4 col-xl-2 align align-self-start">
+                <h4>Seguinos</h4>                          
+                <a href="#"> <i class="fab fa-facebook-f"></i></a>
+                <a href="#"> <i class="fab fa-instagram"></i> </a><br>
+                <a href="#"> <i class="fab fa-twitter"></i></a>
+                <a href="#"> <i class="fab fa-linkedin"></i></a>
+                <a href="#inicio"><i class="fa-solid fa-circle-chevron-up" style="color: #981fb4;"></i></a>
+            </div> 
+        </div> 
+
+</footer>
+
+    <!--Script Boostrap-->
+    
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" 
+    integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous">
+</script>
+
+</body>
+</html>
