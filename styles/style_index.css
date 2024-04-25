@@ -86,13 +86,9 @@ li {list-style: none;}
 
 .card{
     box-shadow: 1px 5px 5px rgb(127, 60, 148);/*sombra*/
-    align-items: center;
-    justify-content: space-between;
+    align-content: center;
+    justify-content: center;
     margin: 40px;
-}
-
-.card-body{
-    align-content: flex-end;    
 }
 
 
