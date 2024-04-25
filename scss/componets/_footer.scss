@@ -1,0 +1,48 @@
+/*---------------FOOTER---------------------------------------------------------------------------------*/
+
+/*Estilizamos la caja del footer, color y tamaño*/
+.container-fluid {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:rgb(245, 241, 250);
+    font-size: 0.9em; 
+    border-radius: 10px;
+    padding-top: 10px;
+} 
+
+.container-fluid .row {
+    justify-content: space-between;
+}
+/*Estilizamos tamaño de los H4*/
+footer h4{
+    font-size: 1.25em;
+    font-weight: bold;
+    text-decoration: underline;
+    color: blueviolet;
+}
+
+/*Estilizamos los párrafos de las plantas*/
+footer p{
+    font-size: 0.8em;
+}
+
+/*Estilizamos los íconos de las redes*/
+.fab{
+    font-size: 30px;
+    padding: 5px;
+}
+
+/*Estilizamos el botón de subir al inicio*/
+.fa-solid{
+    font-size: 40px;
+    padding-left: 20px;
+}       
+
+/*Estilizamos MAPA del footer*/
+.mapa{
+    margin-top: 5px;
+    border-radius: 10px;/*borde redondeado*/
+    box-shadow: 1px 5px 5px rgb(47, 48, 60);/*sombra*/
+    width: 500px; height: 300px;
+}
