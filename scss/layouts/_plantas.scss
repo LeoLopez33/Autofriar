@@ -17,7 +17,7 @@
     height: 60%;
     object-fit: cover; /*para redimensionar o ajusta el contenido y no se deforme*/
     border-radius: 10px;/*borde redondeado*/
-    box-shadow: 1px 5px 5px rgb(47, 48, 60);/*sombra*/
+    box-shadow: $sombra;
     margin-top: 20px;
 }
 

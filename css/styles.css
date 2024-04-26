@@ -7,13 +7,6 @@
   padding: 0;
 }
 
-body {
-  font-family: "Roboto", sans-serif;
-  margin: 0;
-  margin-left: 8px;
-  background-color: rgba(186, 200, 212, 0.528);
-}
-
 /* IMPORTAMOS COMPONENTES*/
 /*---------------FOOTER---------------------------------------------------------------------------------*/
 /*Estilizamos la caja del footer, color y tamaño*/
@@ -124,6 +117,14 @@ footer p {
 .grid-contacto {
   padding: 20px 20px;
   background: radial-gradient(rgb(177, 189, 239), rgb(241, 237, 237));
+  box-shadow: 1px 5px 5px rgb(47, 48, 60);
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  margin-left: 8px;
+  background-color: rgba(191, 212, 186, 0.528);
 }
 
 /*Estilizamos fuente, tamaños y estilos de LU,LI,H1,H2,P*/
@@ -151,7 +152,7 @@ li {
 }
 
 .card {
-  box-shadow: 1px 5px 5px rgb(127, 60, 148); /*sombra*/
+  box-shadow: 1px 5px 5px rgb(47, 48, 60);
   align-content: center;
   justify-content: center;
   margin: 40px;
@@ -160,7 +161,7 @@ li {
 /*Estilizamos las IMAGENES de la card*/
 .card-images {
   border-radius: 10px; /*borde redondeado*/
-  box-shadow: 1px 5px 5px rgb(47, 48, 60); /*sombra*/
+  box-shadow: 1px 5px 5px rgb(47, 48, 60);
   object-fit: cover;
   overflow: hidden;
 }
@@ -173,7 +174,7 @@ li {
   border-radius: 10px;
   font-weight: bold;
   font-style: italic;
-  box-shadow: 1px 5px 5px rgb(47, 48, 60); /*sombra*/
+  box-shadow: 1px 5px 5px rgb(47, 48, 60);
   border: 1px solid rgb(47, 48, 60);
   background-color: blueviolet;
   margin-top: 10px;
@@ -260,7 +261,7 @@ h2 {
   border-radius: 10px;
   object-fit: cover;
   width: 600px;
-  box-shadow: 1px 5px 5px rgb(47, 48, 60); /*sombra*/
+  box-shadow: 1px 5px 5px rgb(47, 48, 60);
 }
 
 .skin2 img {
@@ -268,7 +269,7 @@ h2 {
   border-radius: 10px;
   object-fit: cover;
   width: 600px;
-  box-shadow: 1px 5px 5px rgb(47, 48, 60); /*sombra*/
+  box-shadow: 1px 5px 5px rgb(47, 48, 60);
 }
 
 .skin3 img {
@@ -277,7 +278,7 @@ h2 {
   object-fit: cover;
   border-radius: 10px;
   width: 140px;
-  box-shadow: 1px 5px 5px rgb(47, 48, 60); /*sombra*/
+  box-shadow: 1px 5px 5px rgb(47, 48, 60);
 }
 
 /*Estilizamos el párrado*/
@@ -302,7 +303,7 @@ h2 {
   height: 60%;
   object-fit: cover; /*para redimensionar o ajusta el contenido y no se deforme*/
   border-radius: 10px; /*borde redondeado*/
-  box-shadow: 1px 5px 5px rgb(47, 48, 60); /*sombra*/
+  box-shadow: 1px 5px 5px rgb(47, 48, 60);
   margin-top: 20px;
 }
 
@@ -372,7 +373,7 @@ h2 {
   overflow: hidden;
   object-fit: cover; /*para redimensionar o ajusta el contenido*/
   border-radius: 10px; /*borde redondeado*/
-  box-shadow: 1px 5px 5px rgb(47, 48, 60); /*sombra*/
+  box-shadow: 1px 5px 5px rgb(47, 48, 60);
   width: 150%;
   height: 150%;
   transition: width 2s, height 2s;

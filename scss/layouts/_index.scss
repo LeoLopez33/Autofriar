@@ -1,4 +1,9 @@
-
+body {
+    font-family: $font-web;
+    margin: 0;
+    margin-left: 8px;
+    background-color: $primary-color; 
+}
 
 /*Estilizamos fuente, tamaños y estilos de LU,LI,H1,H2,P*/
 h1 {font-size: 3em;}
@@ -15,7 +20,7 @@ li {list-style: none;}
 }
 
 .card{
-    box-shadow: 1px 5px 5px rgb(127, 60, 148);/*sombra*/
+    box-shadow: $sombra;
     align-content: center;
     justify-content: center;
     margin: 40px;
@@ -23,9 +28,9 @@ li {list-style: none;}
 
 
 /*Estilizamos las IMAGENES de la card*/
-.card-images{
-    border-radius: 10px;/*borde redondeado*/
-    box-shadow: 1px 5px 5px rgb(47, 48, 60);/*sombra*/
+.card-images {
+    border-radius: 10px; /*borde redondeado*/
+    box-shadow: $sombra;
     object-fit: cover;
     overflow: hidden;
 }
@@ -39,7 +44,7 @@ li {list-style: none;}
     border-radius: 10px;
     font-weight: bold;
     font-style: italic;
-    box-shadow: 1px 5px 5px rgb(47, 48, 60);/*sombra*/
+    box-shadow: $sombra;
     border: 1px solid rgb(47, 48, 60);
     background-color: blueviolet;
     margin-top: 10px;
