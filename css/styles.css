@@ -112,8 +112,6 @@ footer p {
 }
 
 /* IMPORTAMOS LAYOUT*/
-/*-----------------CONTACTOS.HTML-----------------------------------------------------------------------------*/
-/*Estilizamos el fondo y espacios*/
 .grid-contacto {
   padding: 20px 20px;
   background: radial-gradient(rgb(177, 189, 239), rgb(241, 237, 237));
@@ -127,7 +125,6 @@ body {
   background-color: radial-gradient(rgb(177, 189, 239), rgb(241, 237, 237));
 }
 
-/*Estilizamos fuente, tamaños y estilos de LU,LI,H1,H2,P*/
 h1 {
   font-size: 3em;
 }
@@ -144,7 +141,6 @@ li {
   list-style: none;
 }
 
-/*---------------SECTION/MAIN---------------------------------------------------------------------------------*/
 .content {
   display: flex;
   justify-content: center;
@@ -157,16 +153,18 @@ li {
   justify-content: center;
   margin: 40px;
 }
-
-/*Estilizamos las IMAGENES de la card*/
-.card-images {
-  border-radius: 10px; /*borde redondeado*/
+.card .card-images {
+  border-radius: 10px;
   box-shadow: 1px 5px 5px rgb(47, 48, 60);
   object-fit: cover;
   overflow: hidden;
 }
+.card .card p {
+  margin-top: 20px;
+  font-size: 1.1em;
+  text-align: justify;
+}
 
-/*Estilizamos los BOTONES de los ENLACES <a>*/
 .button {
   font-size: 1em;
   height: 2.3em;
@@ -185,30 +183,19 @@ li {
   justify-content: center;
 }
 
-/*Estilizamos la class .color-part, divide el color de los H1, H2"*/
 .color-part {
   color: blueviolet;
 }
 
-/*Estilizamos los textos de los botones*/
 .button a {
   color: rgb(245, 245, 245);
   text-decoration: none;
 }
 
-/*Animación de los botones*/
 button:hover {
   background-color: rgb(42, 12, 71);
 }
 
-/*Estilizamos los párrafos <p> de los container o sections*/
-.card p {
-  margin-top: 20px;
-  font-size: 1.1em;
-  text-align: justify;
-}
-
-/*Estilizamos la id #FRASE*/
 #frase {
   text-align: center;
   font-style: italic;
@@ -216,11 +203,9 @@ button:hover {
   font-size: 1.9em;
   margin-top: 50px;
   margin-bottom: 50px;
-  border-radius: 10px; /*borde redondeado*/
+  border-radius: 10px;
 }
 
-/*-----------------NOSOTROS.HTML-----------------------------------------------------------------------------*/
-/*Estilizamos el SECTION*/
 .nosotros {
   display: flex;
   flex-direction: column;
@@ -230,9 +215,7 @@ button:hover {
   padding: 20px;
   background: radial-gradient(rgb(177, 189, 239), rgb(241, 237, 237));
 }
-
-/*Estilizamos el ARTICLE*/
-.nosotros-card {
+.nosotros .nosotros-card {
   width: 100%;
   display: flex;
   align-items: center;
@@ -241,59 +224,47 @@ button:hover {
   border-radius: 10px;
   background: radial-gradient(rgb(165, 139, 208), rgb(241, 237, 237));
 }
-
-/*Invertimos el flex a traves de los hijos*/
-.nosotros-card:nth-child(2n) {
-  flex-direction: row-reverse;
-}
-
-/*Tamaño IMG*/
-.nosotros-card-img img {
-  width: 100%;
-  object-fit: cover;
-}
-
-/*Estilizamos las IMG*/
-.nosotros-card-img {
+.nosotros .nosotros-card-img {
   overflow: hidden;
-  object-fit: cover; /*para redimensionar o ajusta el contenido*/
-  border-radius: 10px; /*borde redondeado*/
+  object-fit: cover;
+  border-radius: 10px;
   box-shadow: 1px 5px 5px rgb(47, 48, 60);
   width: 150%;
   height: 150%;
   transition: width 2s, height 2s;
 }
-
-/*Estilizamos las IMG*/
-.nosotros-card-prov {
+.nosotros .nosotros-card-prov {
   overflow: hidden;
-  object-fit: cover; /*para redimensionar o ajusta el contenido*/
-  border-radius: 10px; /*borde redondeado*/
+  object-fit: cover;
+  border-radius: 10px;
   box-shadow: 1px 5px 5px rgb(47, 48, 60);
   width: 100%;
   height: 150%;
 }
+.nosotros .nosotros-card-box {
+  padding: 10px;
+  width: 100%;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.nosotros .nosotros-card h4 {
+  color: blueviolet;
+  text-decoration: underline;
+}
 
-/*hover para las IMG*/
+.nosotros-card:nth-child(2n) {
+  flex-direction: row-reverse;
+}
+
+.nosotros-card-img img {
+  width: 100%;
+  object-fit: cover;
+}
+
 .nosotros-card:hover .nosotros-card-img {
   width: 300%;
   object-fit: cover;
 }
 
-/*Estilizamos el contenido*/
-.nosotros-card-box {
-  padding: 10px;
-  width: 100%;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-}
-
-.nosotros-card h4 {
-  color: blueviolet;
-  text-decoration: underline;
-}
-
-/*-----------------PLANTAS.HTML-----------------------------------------------------------------------------*/
-/*Estilizamos la class acordion*/
 .accordion-body {
   text-align: center;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
@@ -303,24 +274,21 @@ button:hover {
   background: radial-gradient(rgb(177, 189, 239), rgb(241, 237, 237));
 }
 
-/*Estilizamos las imágenes de class .plantas*/
 .accordion-body img {
   width: 60%;
   height: 60%;
-  object-fit: cover; /*para redimensionar o ajusta el contenido y no se deforme*/
-  border-radius: 10px; /*borde redondeado*/
+  object-fit: cover;
+  border-radius: 10px;
   box-shadow: 1px 5px 5px rgb(47, 48, 60);
   margin-top: 20px;
 }
 
-/*Transición de imágenes en la class .plantas*/
 .accordion-body img:hover {
   width: 75%;
   height: 75%;
   transition: width 2s, height 2s;
 }
 
-/*Estilizamos el H3 texto de class .plantas*/
 .plantas h3 {
   text-align: center;
   padding-bottom: 20px;
@@ -340,20 +308,16 @@ button:hover {
   font-style: italic;
 }
 
-/*-----------------PROYECTOS.HTML-----------------------------------------------------------------------------*/
-/*Estilizamos el SECTION*/
 .proyectos {
-  display: flex; /*maquetamos con flex*/
+  display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 30px; /*espacio entre FILAS / COLUMNAS*/
+  gap: 30px;
   padding: 20px;
   background: radial-gradient(rgb(177, 189, 239), rgb(241, 237, 237));
 }
-
-/*Estilizamos el ARTICLE*/
-.proyecto-card {
+.proyectos .proyecto-card {
   width: 90%;
   display: flex;
   align-items: center;
@@ -362,36 +326,30 @@ button:hover {
   border-radius: 10px;
   background: radial-gradient(rgb(165, 139, 208), rgb(241, 237, 237));
 }
-
-/*Invertimos el flex a traves de los hijos*/
-.proyecto-card:nth-child(2n) {
-  flex-direction: row-reverse;
-}
-
-/*Tamaño IMG*/
-.proyecto-card-img img {
-  width: 100%;
-  object-fit: cover;
-}
-
-/*Estilizamos las IMG*/
-.proyecto-card-img {
+.proyectos .proyecto-card-img {
   overflow: hidden;
-  object-fit: cover; /*para redimensionar o ajusta el contenido*/
-  border-radius: 10px; /*borde redondeado*/
+  object-fit: cover;
+  border-radius: 10px;
   box-shadow: 1px 5px 5px rgb(47, 48, 60);
   width: 150%;
   height: 150%;
   transition: width 2s, height 2s;
 }
 
-/*hover para las IMG*/
+.proyecto-card:nth-child(2n) {
+  flex-direction: row-reverse;
+}
+
+.proyecto-card-img img {
+  width: 100%;
+  object-fit: cover;
+}
+
 .proyecto-card:hover .proyecto-card-img {
   width: 300%;
   object-fit: cover;
 }
 
-/*Estilizamos el contenido*/
 .proyecto-card-box {
   padding: 10px;
   width: 100%;

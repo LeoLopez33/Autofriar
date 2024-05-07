@@ -5,13 +5,12 @@ body {
     background-color: $primary-color; 
 }
 
-/*Estilizamos fuente, tamaños y estilos de LU,LI,H1,H2,P*/
+
 h1 {font-size: 3em;}
 h2 {font-size: 2em;}
 ul {list-style: none;}
 li {list-style: none;}
 
-/*---------------SECTION/MAIN---------------------------------------------------------------------------------*/
 
 .content{
     display: flex;
@@ -19,25 +18,27 @@ li {list-style: none;}
     align-content: center;
 }
 
-
 .card{
     box-shadow: $sombra;
     align-content: center;
     justify-content: center;
     margin: 40px;
+    
+    .card-images {
+        border-radius: 10px;
+        box-shadow: $sombra;
+        object-fit: cover;
+        overflow: hidden;
+    }
+
+    .card p{
+        margin-top: 20px;
+        font-size: 1.1em;
+        text-align:justify;
+    }
 }
 
 
-/*Estilizamos las IMAGENES de la card*/
-.card-images {
-    border-radius: 10px; /*borde redondeado*/
-    box-shadow: $sombra;
-    object-fit: cover;
-    overflow: hidden;
-}
-
-
-/*Estilizamos los BOTONES de los ENLACES <a>*/
 .button {
     font-size: 1em;
     height: 2.3em;
@@ -57,31 +58,22 @@ li {list-style: none;}
 }
 
 
-/*Estilizamos la class .color-part, divide el color de los H1, H2"*/
+
 .color-part{
     color:blueviolet;
 }
 
-/*Estilizamos los textos de los botones*/
+
 .button a{
     color: rgb(245, 245, 245);
     text-decoration: none;
 }
 
 
-/*Animación de los botones*/
 button:hover{
     background-color: rgb(42, 12, 71);
 }
 
-/*Estilizamos los párrafos <p> de los container o sections*/
-.card p{
-    margin-top: 20px;
-    font-size: 1.1em;
-    text-align:justify;
-}
-
-/*Estilizamos la id #FRASE*/
 
 #frase{
     text-align: center;
@@ -90,5 +82,5 @@ button:hover{
     font-size: 1.9em;
     margin-top: 50px;
     margin-bottom: 50px;
-    border-radius: 10px;/*borde redondeado*/    
+    border-radius: 10px;
 }

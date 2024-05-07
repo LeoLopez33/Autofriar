@@ -1,7 +1,5 @@
 
-/*-----------------PLANTAS.HTML-----------------------------------------------------------------------------*/
 
-/*Estilizamos la class acordion*/
 .accordion-body{
     text-align: center;
     font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -11,24 +9,24 @@
     background: radial-gradient(rgb(177, 189, 239), rgb(241, 237, 237)); 
 }
 
-/*Estilizamos las imágenes de class .plantas*/
+
 .accordion-body img{
     width: 60%;
     height: 60%;
-    object-fit: cover; /*para redimensionar o ajusta el contenido y no se deforme*/
-    border-radius: 10px;/*borde redondeado*/
+    object-fit: cover; 
+    border-radius: 10px;
     box-shadow: $sombra;
     margin-top: 20px;
 }
 
-/*Transición de imágenes en la class .plantas*/
+
 .accordion-body img:hover {
     width: 75%;
     height: 75%;
     transition: width 2s, height 2s;
 }
 
-/*Estilizamos el H3 texto de class .plantas*/
+
 .plantas h3{
     text-align: center;
     padding-bottom: 20px;

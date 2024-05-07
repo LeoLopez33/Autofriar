@@ -1,57 +1,52 @@
-/*-----------------PROYECTOS.HTML-----------------------------------------------------------------------------*/
 
-/*Estilizamos el SECTION*/
 .proyectos {
-    display: flex; /*maquetamos con flex*/
+    display: flex; 
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 30px; /*espacio entre FILAS / COLUMNAS*/
+    gap: 30px;
     padding: 20px;
     background: radial-gradient(rgb(177, 189, 239), rgb(241, 237, 237));
+
+    .proyecto-card{
+        width: 90%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+        border-radius: 10px;
+        background: radial-gradient(rgb(165, 139, 208), rgb(241, 237, 237));
+    }
+
+    .proyecto-card-img{
+        overflow: hidden;
+        object-fit: cover; 
+        border-radius: 10px;
+        box-shadow: $sombra;
+        width: 150%;
+        height: 150%;
+        transition: width 2s, height 2s;
+    }
 }
 
-/*Estilizamos el ARTICLE*/
-.proyecto-card{
-    width: 90%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 20px;
-    border-radius: 10px;
-    background: radial-gradient(rgb(165, 139, 208), rgb(241, 237, 237));
-}
 
-/*Invertimos el flex a traves de los hijos*/
 .proyecto-card:nth-child(2n) {
    flex-direction:row-reverse;
 }
 
-/*Tamaño IMG*/
+
 .proyecto-card-img img {
     width: 100%;
     object-fit: cover;
 }
 
-/*Estilizamos las IMG*/
-.proyecto-card-img{
-    overflow: hidden;
-    object-fit: cover; /*para redimensionar o ajusta el contenido*/
-    border-radius: 10px;/*borde redondeado*/
-    box-shadow: $sombra;
-    width: 150%;
-    height: 150%;
-    transition: width 2s, height 2s;
-}
 
-/*hover para las IMG*/
 .proyecto-card:hover .proyecto-card-img {
     width: 300%;
     object-fit: cover;
 }
 
 
-/*Estilizamos el contenido*/
 .proyecto-card-box{
     padding: 10px;
     width: 100%;
