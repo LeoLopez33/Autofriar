@@ -57,12 +57,13 @@ li {list-style: none;}
     justify-content: center;
 }
 
-
-
-.color-part{
+@mixin color-part {
     color:blueviolet;
 }
 
+.color-part{
+    @include color-part;
+}
 
 .button a{
     color: rgb(245, 245, 245);
