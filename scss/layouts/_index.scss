@@ -2,7 +2,7 @@ body {
     font-family: $font-web;
     margin: 0;
     margin-left: 8px;
-    background-color: $primary-color; 
+    background-color: $primary-color;
 }
 
 
@@ -29,12 +29,24 @@ li {list-style: none;}
         box-shadow: $sombra;
         object-fit: cover;
         overflow: hidden;
+        height: 250px;
+        width: 100%;
+
     }
 
     .card p{
         margin-top: 20px;
         font-size: 1.1em;
         text-align:justify;
+        min-height: 230px;
+        max-height: 100%;
+    }
+
+    .card-body {
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
     }
 }
 
@@ -52,10 +64,12 @@ li {list-style: none;}
     margin-top: 10px;
 }
 
+/*
 .boton{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
 }
+*/
 
 @mixin color-part {
     color:blueviolet;

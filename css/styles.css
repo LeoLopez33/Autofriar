@@ -149,11 +149,20 @@ li {
   box-shadow: 1px 5px 5px rgb(47, 48, 60);
   object-fit: cover;
   overflow: hidden;
+  height: 250px;
+  width: 100%;
 }
 .card .card p {
   margin-top: 20px;
   font-size: 1.1em;
   text-align: justify;
+  min-height: 230px;
+  max-height: 100%;
+}
+.card .card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .button {
@@ -169,11 +178,12 @@ li {
   margin-top: 10px;
 }
 
-.boton {
-  display: flex;
-  justify-content: center;
+/*
+.boton{
+    display: flex;
+    justify-content: space-between;
 }
-
+*/
 .color-part {
   color: blueviolet;
 }
@@ -252,7 +262,7 @@ button:hover {
 }
 
 .nosotros-card:hover .nosotros-card-img {
-  width: 300%;
+  width: 180%;
   object-fit: cover;
 }
 
@@ -337,7 +347,7 @@ button:hover {
 }
 
 .proyecto-card:hover .proyecto-card-img {
-  width: 300%;
+  width: 180%;
   object-fit: cover;
 }
 
